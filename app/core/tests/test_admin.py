@@ -7,13 +7,8 @@ from django.urls import reverse
 from django.test import Client
 from django.db.utils import IntegrityError
 from django.db import transaction
-from django.http import HttpResponse
-
-from core.models import User
 
 from psycopg2.errors import UniqueViolation
-
-from unittest.mock import patch
 
 
 class AdminSiteTests(TestCase):
