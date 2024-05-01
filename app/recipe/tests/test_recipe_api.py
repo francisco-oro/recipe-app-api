@@ -257,13 +257,13 @@ class PrivateRecipeAPITests(TestCase):
         """Test creating tag when updating a recipe."""
         recipe = create_recipe(user=self.user)
         payload = {
-            'tags': [{'name': 'launch'}]
+            'tags': [{'name': 'Lunch'}]
         }
         url = detail_url(recipe.id)
         res = self.client.patch(url, payload, format='json')
 
         self.assertEqual(res.status_code, status.HTTP_200_OK)
-        new_tag = Tag.objects.get(user=self.user, name='Launch')
+        new_tag = Tag.objects.get(user=self.user, name='Lunch')
         self.assertIn(new_tag, recipe.tags.all())
 
     def test_update_recipe_assign_tag(self):
@@ -283,7 +283,7 @@ class PrivateRecipeAPITests(TestCase):
 
     def test_clear_recipe_tags(self):
         """Test clearing a recipe's tags."""
-        tag = Tag.objects.create(use=self.user, name='Dessert')
+        tag = Tag.objects.create(user=self.user, name='Dessert')
         recipe = create_recipe(user=self.user)
         recipe.tags.add(tag)
 
