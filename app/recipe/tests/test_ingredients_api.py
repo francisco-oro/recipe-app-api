@@ -22,7 +22,10 @@ def detail_url(ingredient_id):
 
 def create_user(email='user@example.com', password='testpass123', **kwargs):
     """Create and return user."""
-    return get_user_model().objects.create_user(email=email, password=password, **kwargs)
+    return get_user_model().objects.create_user(
+        email=email,
+        password=password,
+        **kwargs)
 
 
 class PublicIngredientsApiTests(TestCase):
