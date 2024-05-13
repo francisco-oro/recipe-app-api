@@ -4,7 +4,9 @@ Serializers for recipe APIs
 from rest_framework import serializers
 
 from core.models import (
-    Recipe, Tag, Ingredient
+    Recipe,
+    Tag,
+    Ingredient,
 )
 
 
@@ -18,7 +20,7 @@ class IngredientSerializer(serializers.ModelSerializer):
 
 
 class TagSerializer(serializers.ModelSerializer):
-    """Serializer for tags"""
+    """Serializer for tags."""
 
     class Meta:
         model = Tag
@@ -37,7 +39,7 @@ class RecipeSerializer(serializers.ModelSerializer):
             'id', 'title', 'time_minutes', 'price', 'link', 'tags',
             'ingredients',
         ]
-        read_ony_fields = ['id']
+        read_only_fields = ['id']
 
     def _get_or_create_tags(self, tags, recipe):
         """Handle getting or creating tags as needed."""
@@ -45,7 +47,7 @@ class RecipeSerializer(serializers.ModelSerializer):
         for tag in tags:
             tag_obj, created = Tag.objects.get_or_create(
                 user=auth_user,
-                **tag
+                **tag,
             )
             recipe.tags.add(tag_obj)
 
@@ -55,7 +57,7 @@ class RecipeSerializer(serializers.ModelSerializer):
         for ingredient in ingredients:
             ingredient_obj, created = Ingredient.objects.get_or_create(
                 user=auth_user,
-                **ingredient
+                **ingredient,
             )
             recipe.ingredients.add(ingredient_obj)
 
@@ -76,7 +78,6 @@ class RecipeSerializer(serializers.ModelSerializer):
         if tags is not None:
             instance.tags.clear()
             self._get_or_create_tags(tags, instance)
-
         if ingredients is not None:
             instance.ingredients.clear()
             self._get_or_create_ingredients(ingredients, instance)
@@ -92,7 +93,7 @@ class RecipeDetailSerializer(RecipeSerializer):
     """Serializer for recipe detail view."""
 
     class Meta(RecipeSerializer.Meta):
-        fields = RecipeSerializer.Meta.fields + ['description', 'image']
+        fields = RecipeSerializer.Meta.fields + ['description']
 
 
 class RecipeImageSerializer(serializers.ModelSerializer):
