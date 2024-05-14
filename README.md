@@ -84,14 +84,12 @@ The API allows developers to:
 
 The technologies used for this project are listed below:
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![PostgreSql][PostgreSql]][PostgreSql-Url]
+* [![drf][drf]][drf-url]
+* [![nginx][nginx]][nginx-url]
+* [![aws][aws]][aws-url]
+* [![swagger][swagger]][swagger-url]
+* [![docker][docker]][docker-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,8 +99,14 @@ The technologies used for this project are listed below:
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This guide contains step-by-step instructions on how to get started with Recipe App API. This guide
+shows you how to:
+
+- Build and run the project image as a container
+- Setup for development environment
+- Setup for production environment
+- Create a superuser and login to the admin site
+- Start making requests to the server
 
 ### Prerequisites
 
@@ -292,11 +296,30 @@ to kick things off!
 
 [JQuery-url]: https://jquery.com
 
-[PostgreSql.com]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+[PostgreSql]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
 
 [PostgreSql-url]: https://www.postgresql.org/
 
-[django.com] https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white
+[django.com]: https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white
 
-[django-url] https://www.djangoproject.com/
+[django-url]: https://www.djangoproject.com/
 
+[drf]: https://img.shields.io/badge/django%20rest-ff1709?style=for-the-badge&logo=django&logoColor=white
+
+[drf-url]: https://www.django-rest-framework.org/
+
+[docker]:  https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white
+
+[docker-url]: https://www.docker.com/
+
+[nginx]: https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white
+
+[nginx-url]: https://nginx.org/en/
+
+[swagger]: https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white
+
+[swagger-url]: https://swagger.io/
+
+[aws]: https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white
+
+[aws-url]: https://aws.amazon.com/
