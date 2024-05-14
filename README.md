@@ -108,19 +108,39 @@ shows you how to:
 - Create a superuser and login to the admin site
 - Start making requests to the server
 
+To get started with Recipe App API, make sure you <a href="#prerequisites">meet the prerequisites</a>,
+and follow the <a href="#installation">installation steps</a>.
+
+OS requirements
+
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+#### Docker
 
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You need Docker, docker-compose, and git setup on your machine. Refer
+to <a href="https://docs.docker.com/guides/get-started/">Docker Documentation</a>.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't
-rely on any external dependencies or services._
+#### Local Setup
+
+```shell
+git clone https://github.com/francisco-oro/recipe-app-api.git
+cd recipe-app-api 
+docker-compose -f docker-compose.yml up
+```
+
+Wait for some time until the setup script creates a site. After that, you can access
+`http://localhost:8000` in your browser and navigate to `http://localhost:8000/api/docs` in order
+to access the swagger documentation
+
+#### Deployment
+
+```shell
+git clone https://github.com/francisco-oro/recipe-app-api.git
+cd recipe-app-api 
+docker-compose -f docker-compose.yml up
+```
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -144,10 +164,12 @@ rely on any external dependencies or services._
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos
-work well in this space. You may also link to more resources.
+### Create a new user
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+![usage1](images/usage_1.png)
+
+_For more examples, please refer to
+the [Documentation](http://ec2-13-58-241-239.us-east-2.compute.amazonaws.com/api/docs/#/recipe/recipe_ingredients_list)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,15 +179,23 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+- [x] App Design
+- [x] Test Driven Development
+- [x] System and Project Setup
+- [x] Database
+- [x] Token-Based authentication
+- [x] API Documentation
+- [x] User API
+- [x] Recipe API
+- [x] Tags API
+- [x] Ingredients API
+- [x] Recipe image API
+- [x] Filtering
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (
+See the [open issues](https://github.com/francisco-oro/recipe-app-api/issues) for a full list of proposed features (
 and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -176,12 +206,7 @@ and known issues).
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any
-contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also
-simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Contributions are welcome
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -197,7 +222,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the BSL-1.0 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,9 +232,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Francisco Oro - [@franciscooro101](https://twitter.com/franciscooro101) - francisco.oro@comunidad.unam.mx
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/francisco-oro/recipe-app-api](https://github.com/francisco-oro/recipe-app-api)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,8 +244,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites
-to kick things off!
+These resources were helpful to build this project
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
