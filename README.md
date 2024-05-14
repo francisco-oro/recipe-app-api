@@ -26,11 +26,11 @@
     <a href="http://ec2-13-58-241-239.us-east-2.compute.amazonaws.com/api/docs/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="http://ec2-13-58-241-239.us-east-2.compute.amazonaws.com/api/user/create/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/francisco-oro/recipe-app-api/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/francisco-oro/recipe-app-api/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -68,30 +68,21 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![product_screenshot](images/product_screenshot.png)
+The Recipe App API gives users access to their food recipes, store ingredients and tags assigned to them
+and filter or sorter based on these items. The filtering and sorting of the recipes makes it easy
+to search for recipes using clear queries, like `api/recipe/recipes/&tags=4,2&ingredients=3`
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I
-created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I
-think this is it.
+The API allows developers to:
 
-Here's why:
-
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near
-future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all
-the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Handle user authentication
+- Create new recipes, tags, and ingredients
+- Filtering and sorting recipes by tags and/or ingredients
+- Uploading and viewing images for recipes
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for
-the acknowledgements section. Here are a few examples.
+The technologies used for this project are listed below:
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
@@ -299,4 +290,13 @@ to kick things off!
 
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
+
+[PostgreSql.com]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+
+[PostgreSql-url]: https://www.postgresql.org/
+
+[django.com] https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white
+
+[django-url] https://www.djangoproject.com/
+
